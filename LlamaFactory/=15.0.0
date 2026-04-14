@@ -1,0 +1,126 @@
+Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+
+## Package Plan ##
+
+  environment location: /home/test1267/test-6/miniconda3/envs/sft
+
+  added / updated specs:
+    - pyarrow
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    aws-c-auth-0.10.1          |       h536185d_1         131 KB  conda-forge
+    aws-c-compression-0.3.2    |       h8b1a151_0          22 KB  conda-forge
+    aws-c-event-stream-0.6.0   |       h841be55_0          58 KB  conda-forge
+    aws-c-http-0.10.11         |       hf621c6d_0         220 KB  conda-forge
+    aws-c-io-0.26.1            |       hc87160b_2         177 KB  conda-forge
+    aws-c-mqtt-0.15.0          |       hac84f0a_1         217 KB  conda-forge
+    aws-c-s3-0.11.5            |       h37c9286_4         148 KB  conda-forge
+    aws-checksums-0.2.10       |       h8b1a151_0          99 KB  conda-forge
+    aws-crt-cpp-0.37.4         |       haf8ea0b_2         400 KB  conda-forge
+    aws-sdk-cpp-1.11.747       |       hc3785e1_3         3.5 MB  conda-forge
+    azure-core-cpp-1.16.2      |       h206d751_0         341 KB  conda-forge
+    azure-identity-cpp-1.13.3  |       hed0cdb0_1         245 KB  conda-forge
+    azure-storage-blobs-cpp-12.16.0|       hdd73cc9_1         566 KB  conda-forge
+    azure-storage-common-cpp-12.12.0|       ha7a2c86_1         147 KB  conda-forge
+    azure-storage-files-datalake-cpp-12.14.0|       h52c5a47_1         295 KB  conda-forge
+    krb5-1.22.2                |       ha1258a1_0         1.3 MB  conda-forge
+    libabseil-20260107.1       | cxx17_h7b12aa8_0         1.3 MB  conda-forge
+    libarrow-23.0.1            |   hb091a9b_7_cpu         6.2 MB  conda-forge
+    libarrow-acero-23.0.1      |   h635bf11_7_cpu         595 KB  conda-forge
+    libarrow-compute-23.0.1    |   h53684a4_7_cpu         2.9 MB  conda-forge
+    libarrow-dataset-23.0.1    |   h635bf11_7_cpu         594 KB  conda-forge
+    libarrow-substrait-23.0.1  |   hb4dd7c2_7_cpu         507 KB  conda-forge
+    libcurl-8.19.0             |       hcf29cc6_0         456 KB  conda-forge
+    libgoogle-cloud-2.43.0     |       h9d11ab5_0         1.3 MB  conda-forge
+    libgoogle-cloud-storage-2.43.0|       hdbdcf42_0         792 KB  conda-forge
+    libgrpc-1.78.0             |       h1d1128b_1         6.7 MB  conda-forge
+    libnghttp2-1.68.1          |       h877daf1_0         648 KB  conda-forge
+    libopentelemetry-cpp-1.25.0|       h9692893_0         914 KB  conda-forge
+    libopentelemetry-cpp-headers-1.25.0|       ha770c72_0         379 KB  conda-forge
+    libparquet-23.0.1          |   h7376487_7_cpu         1.3 MB  conda-forge
+    libprotobuf-6.33.5         |       h2b00c02_0         3.5 MB  conda-forge
+    libre2-11-2025.11.05       |       h0dc7533_1         208 KB  conda-forge
+    libutf8proc-2.11.3         |       hfe17d71_0          84 KB  conda-forge
+    libxml2-2.15.2             |       h031cc0b_0          46 KB  conda-forge
+    libxml2-16-2.15.2          |       hf2a90c1_0         544 KB  conda-forge
+    orc-2.3.0                  |       h21090e2_0         1.4 MB  conda-forge
+    pyarrow-23.0.1             |  py311h38be061_0          28 KB  conda-forge
+    pyarrow-core-23.0.1        |py311h66caee6_0_cpu         5.1 MB  conda-forge
+    re2-2025.11.05             |       h5301d42_1          27 KB  conda-forge
+    s2n-1.7.1                  |       h1cbb8d7_1         386 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        43.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  aws-c-auth         conda-forge/linux-64::aws-c-auth-0.10.1-h536185d_1 
+  aws-c-cal          conda-forge/linux-64::aws-c-cal-0.9.13-h2c9d079_1 
+  aws-c-common       conda-forge/linux-64::aws-c-common-0.12.6-hb03c661_0 
+  aws-c-compression  conda-forge/linux-64::aws-c-compression-0.3.2-h8b1a151_0 
+  aws-c-event-stream conda-forge/linux-64::aws-c-event-stream-0.6.0-h841be55_0 
+  aws-c-http         conda-forge/linux-64::aws-c-http-0.10.11-hf621c6d_0 
+  aws-c-io           conda-forge/linux-64::aws-c-io-0.26.1-hc87160b_2 
+  aws-c-mqtt         conda-forge/linux-64::aws-c-mqtt-0.15.0-hac84f0a_1 
+  aws-c-s3           conda-forge/linux-64::aws-c-s3-0.11.5-h37c9286_4 
+  aws-c-sdkutils     conda-forge/linux-64::aws-c-sdkutils-0.2.4-h8b1a151_4 
+  aws-checksums      conda-forge/linux-64::aws-checksums-0.2.10-h8b1a151_0 
+  aws-crt-cpp        conda-forge/linux-64::aws-crt-cpp-0.37.4-haf8ea0b_2 
+  aws-sdk-cpp        conda-forge/linux-64::aws-sdk-cpp-1.11.747-hc3785e1_3 
+  azure-core-cpp     conda-forge/linux-64::azure-core-cpp-1.16.2-h206d751_0 
+  azure-identity-cpp conda-forge/linux-64::azure-identity-cpp-1.13.3-hed0cdb0_1 
+  azure-storage-blo~ conda-forge/linux-64::azure-storage-blobs-cpp-12.16.0-hdd73cc9_1 
+  azure-storage-com~ conda-forge/linux-64::azure-storage-common-cpp-12.12.0-ha7a2c86_1 
+  azure-storage-fil~ conda-forge/linux-64::azure-storage-files-datalake-cpp-12.14.0-h52c5a47_1 
+  c-ares             conda-forge/linux-64::c-ares-1.34.6-hb03c661_0 
+  gflags             conda-forge/linux-64::gflags-2.2.2-h5888daf_1005 
+  glog               conda-forge/linux-64::glog-0.7.1-hbabe93e_0 
+  keyutils           conda-forge/linux-64::keyutils-1.6.3-hb9d3cd8_0 
+  krb5               conda-forge/linux-64::krb5-1.22.2-ha1258a1_0 
+  libabseil          conda-forge/linux-64::libabseil-20260107.1-cxx17_h7b12aa8_0 
+  libarrow           conda-forge/linux-64::libarrow-23.0.1-hb091a9b_7_cpu 
+  libarrow-acero     conda-forge/linux-64::libarrow-acero-23.0.1-h635bf11_7_cpu 
+  libarrow-compute   conda-forge/linux-64::libarrow-compute-23.0.1-h53684a4_7_cpu 
+  libarrow-dataset   conda-forge/linux-64::libarrow-dataset-23.0.1-h635bf11_7_cpu 
+  libarrow-substrait conda-forge/linux-64::libarrow-substrait-23.0.1-hb4dd7c2_7_cpu 
+  libbrotlicommon    conda-forge/linux-64::libbrotlicommon-1.2.0-hb03c661_1 
+  libbrotlidec       conda-forge/linux-64::libbrotlidec-1.2.0-hb03c661_1 
+  libbrotlienc       conda-forge/linux-64::libbrotlienc-1.2.0-hb03c661_1 
+  libcrc32c          conda-forge/linux-64::libcrc32c-1.1.2-h9c3ff4c_0 
+  libcurl            conda-forge/linux-64::libcurl-8.19.0-hcf29cc6_0 
+  libedit            conda-forge/linux-64::libedit-3.1.20250104-pl5321h7949ede_0 
+  libev              conda-forge/linux-64::libev-4.33-hd590300_2 
+  libevent           conda-forge/linux-64::libevent-2.1.12-hf998b51_1 
+  libgoogle-cloud    conda-forge/linux-64::libgoogle-cloud-2.43.0-h9d11ab5_0 
+  libgoogle-cloud-s~ conda-forge/linux-64::libgoogle-cloud-storage-2.43.0-hdbdcf42_0 
+  libgrpc            conda-forge/linux-64::libgrpc-1.78.0-h1d1128b_1 
+  libiconv           conda-forge/linux-64::libiconv-1.18-h3b78370_2 
+  libnghttp2         conda-forge/linux-64::libnghttp2-1.68.1-h877daf1_0 
+  libopentelemetry-~ conda-forge/linux-64::libopentelemetry-cpp-1.25.0-h9692893_0 
+  libopentelemetry-~ conda-forge/linux-64::libopentelemetry-cpp-headers-1.25.0-ha770c72_0 
+  libparquet         conda-forge/linux-64::libparquet-23.0.1-h7376487_7_cpu 
+  libprotobuf        conda-forge/linux-64::libprotobuf-6.33.5-h2b00c02_0 
+  libre2-11          conda-forge/linux-64::libre2-11-2025.11.05-h0dc7533_1 
+  libssh2            conda-forge/linux-64::libssh2-1.11.1-hcf80075_0 
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-15.2.0-hdf11a46_18 
+  libthrift          conda-forge/linux-64::libthrift-0.22.0-h454ac66_1 
+  libutf8proc        conda-forge/linux-64::libutf8proc-2.11.3-hfe17d71_0 
+  libxml2            conda-forge/linux-64::libxml2-2.15.2-h031cc0b_0 
+  libxml2-16         conda-forge/linux-64::libxml2-16-2.15.2-hf2a90c1_0 
+  lz4-c              conda-forge/linux-64::lz4-c-1.10.0-h5888daf_1 
+  nlohmann_json      conda-forge/linux-64::nlohmann_json-3.12.0-h54a6638_1 
+  orc                conda-forge/linux-64::orc-2.3.0-h21090e2_0 
+  prometheus-cpp     conda-forge/linux-64::prometheus-cpp-1.3.0-ha5d0236_0 
+  pyarrow            conda-forge/linux-64::pyarrow-23.0.1-py311h38be061_0 
+  pyarrow-core       conda-forge/linux-64::pyarrow-core-23.0.1-py311h66caee6_0_cpu 
+  re2                conda-forge/linux-64::re2-2025.11.05-h5301d42_1 
+  s2n                conda-forge/linux-64::s2n-1.7.1-h1cbb8d7_1 
+  snappy             conda-forge/linux-64::snappy-1.2.2-h03e3b7b_1 
+  zlib               conda-forge/linux-64::zlib-1.3.1-hb9d3cd8_2 
+
+
+Proceed ([y]/n)? 

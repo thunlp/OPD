@@ -1,0 +1,56 @@
+### model
+# model_name_or_path: ../model/Qwen3-1.7B
+model_name_or_path: ../model/Qwen3-1.7B-Base
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z2_config.json  # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
+flash_attn: fa2
+enable_liger_kernel: True
+
+### dataset
+dataset: OpenThought3-4B
+# dataset: dapo_math_rl
+# template: qwen3_nothink
+template: qwen3
+enable_thinking: True
+cutoff_len: 14336
+# overwrite_cache: true
+preprocessing_num_workers: 64
+dataloader_num_workers: 64
+
+### output
+output_dir: ../model/Qwen3-1.7B-Base-SFT-OpenThought3-4B
+logging_steps: 5
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: True
+report_to: swanlab # choices: [none, wandb, tensorboard, swanlab, mlflow]
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+gradient_checkpointing: true
+learning_rate: 1.0e-5
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+### eval
+# eval_dataset: alpaca_en_demo
+val_size: 0.05
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 100
+
+### swanlab
+use_swanlab: true
+swanlab_project: llamafactory
+swanlab_run_name: Qwen3-1.7B-Base-SFT-OpenThought3-4B
