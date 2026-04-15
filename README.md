@@ -2,7 +2,7 @@
 
 # Rethinking On-Policy Distillation of Large Language Models:<br>Phenomenology, Mechanism, and Recipe
 
-[![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/xxxx.xxxxx)  [![Github](https://img.shields.io/badge/OPD-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thunlp/OPD)
+[![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13016)  [![Github](https://img.shields.io/badge/OPD-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thunlp/OPD)
 
 </div>
 
@@ -22,7 +22,7 @@
 
 ## News
 
-- **[2026-04-15]** We investigate the dynamics and mechanisms of on-policy distillation (OPD) of LLMs, and propose practical strategies to recover failing OPD. Check it out: [Paper](https://arxiv.org/abs/xxxx.xxxxx).
+- **[2026-04-15]** We investigate the dynamics and mechanisms of on-policy distillation (OPD) of LLMs, and propose practical strategies to recover failing OPD. Check it out: [Paper](https://arxiv.org/pdf/2604.13016).
 
 ## Overview
 
@@ -174,5 +174,10 @@ python grade.py --enable_model_verifier
 If you find this work helpful, please cite us:
 
 ```bibtex
-
+@article{li2026rethinking,
+  title={Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe},
+  author={Li, Yaxuan and Zuo, Yuxin and He, Bingxiang and Zhang, Jinqian and Xiao, Chaojun and Qian, Cheng and Yu, Tianyu and Gao, Huan-ang and Yang, Wenkai and Liu, Zhiyuan and Ding, Ning},
+  journal={arXiv preprint arXiv:2604.13016},
+  year={2026}
+}
 ```
