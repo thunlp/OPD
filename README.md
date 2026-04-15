@@ -90,6 +90,9 @@ bash on_policy_distillation.sh
 
 </details>
 
+> [!NOTE]
+> You can use `scripts/infer/dedup_deepmath.py` to deduplicate DeepMath against DAPO-Math-17K and avoid data overlap, as the experiments shown in Section 5.2 in our paper.
+
 #### SFT
 
 Use `scripts/infer/vllm_rollout.py` to rollout teacher responses that will later be used for student SFT.
@@ -158,6 +161,8 @@ The grading script processes all JSONL files in the output directory and generat
 ```bash
 python grade.py --enable_model_verifier
 ```
+
+*All experiments were conducted on 8 x NVIDIA A800 80GB GPUs.*
 
 # 📨Contact
 
