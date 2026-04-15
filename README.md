@@ -26,6 +26,8 @@
 
 ## Overview
 
+![1776212644959](figs/opd_teaser.png)
+
 On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood.
 This paper provides a systematic investigation of OPD dynamics and mechanisms.
 We first identify that two conditions govern whether OPD succeeds or fails: (i) the student and teacher should share compatible thinking patterns; and (ii) even with consistent thinking patterns and higher scores, the teacher must offer genuinely new capabilities beyond what the student has seen during training.
@@ -89,6 +91,36 @@ bash on_policy_distillation.sh
 </details>
 
 #### SFT
+
+Use `scripts/infer/vllm_rollout.py` to rollout teacher responses that will later be used for student SFT.
+
+<details>
+<summary><b>Key Parameters</b></summary>
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--input-parquet` | required | Path to the parquet file that provides prompts for teacher rollout |
+| `--model-path` | required | Path to the teacher model checkpoint used to generate responses |
+| `--gpu-ids` | `0,1,2,3,4,5,6,7` | Comma-separated GPU IDs used for multiprocessing rollout |
+| `--enable-thinking` | `false` | Whether to enable the model's thinking template when formatting prompts |
+| `--enable-rejection-sampling` | `true` | Whether to reject invalid outputs and retry generation |
+| `--max-attempts-per-rollout` | `3` | Maximum number of retries for each rollout slot when rejection sampling is enabled |
+
+</details>
+
+Below is an example command for generating teacher responses with `Qwen3-4B (Non-thinking)`:
+
+```bash
+python scripts/infer/vllm_rollout.py \
+  --input-parquet datasets/OpenThoughts3-1.2M-math.parquet \
+  --model-path model/Qwen3-4B \
+  --gpu-ids 0,1,2,3,4,5,6,7 \
+  --enable-thinking false \
+  --enable-rejection-sampling true \
+  --max-attempts-per-rollout 3
+```
+
+After the rollout finishes, use the generated teacher responses for student SFT. An example SFT training command is:
 
 ```bash
 llamafactory-cli train LlamaFactory/examples/train_full/qwen3_base_full_sft.yaml
