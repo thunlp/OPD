@@ -183,3 +183,13 @@ If you find this work helpful, please cite us:
   year={2026}
 }
 ```
+
+## Star History
+
+<a href="https://www.star-history.com/#thunlp/OPD&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=octocat/hello-world&type=date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=octocat/hello-world&type=date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=octocat/hello-world&type=date" />
+  </picture>
+</a>
