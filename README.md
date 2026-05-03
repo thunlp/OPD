@@ -16,7 +16,8 @@
   </p>
   <p>
     <a href="#contact" style="text-decoration: none; font-weight: bold;">📨 Contact</a> •
-    <a href="#citation" style="text-decoration: none; font-weight: bold;">🎈 Citation</a>
+    <a href="#citation" style="text-decoration: none; font-weight: bold;">🎈 Citation</a> •
+    <a href="#star-history" style="text-decoration: none; font-weight: bold;">⭐ Star History</a>
   </p>
 </div>
 
@@ -131,9 +132,13 @@ After the rollout finishes, use the generated teacher responses for student SFT.
 llamafactory-cli train LlamaFactory/examples/train_full/qwen3_base_full_sft.yaml
 ```
 
+We release the resulting SFT checkpoint [Qwen3-1.7B-SFT](https://huggingface.co/lllyx/Qwen3-1.7B-SFT), which is obtained by supervised fine-tuning from `Qwen3-1.7B-Base`.
+
 #### RL (GRPO)
 
 We use GRPO as the RL algorithm. To enable RL, set `ADV_ESTIMATOR=grpo` and `LOG_PROB_TOP_K=0`. A reference script `grpo.sh` is provided.
+
+We release the resulting RL checkpoint [Qwen3-4B-Base-GRPO](https://huggingface.co/lllyx/Qwen3-4B-Base-GRPO), which is obtained by zero RL from `Qwen3-4B-Base`.
 
 > [!IMPORTANT]
 > **Non-thinking Models:** When training a non-thinking model (e.g., `Qwen3-1.7B (Non-thinking)`) using OPD or RL, you must add `+data.apply_chat_template_kwargs.enable_thinking=False` to the training script.
@@ -184,7 +189,7 @@ If you find this work helpful, please cite us:
 }
 ```
 
-## Star History
+## ⭐Star History
 
 <a href="https://www.star-history.com/#thunlp/OPD&Date">
   <picture>
