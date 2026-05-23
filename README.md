@@ -21,6 +21,50 @@
 
 ---
 
+## Why this repo is worth sharing on X
+
+- **Explains when on-policy distillation actually works** instead of treating OPD as a black box.
+- **Turns a research question into an actionable recipe** with concrete recovery strategies for failing runs.
+- **Separates teacher quality from teacher usefulness** by showing that better scores alone do not guarantee successful distillation.
+- **Provides code, checkpoints, and reproducible training entry points** for both OPD and SFT workflows.
+
+## TL;DR
+
+> On-policy distillation only works reliably when the teacher matches the student's reasoning style **and** contributes capabilities the student has not already absorbed. This repo studies that failure mode, explains the mechanism, and ships practical fixes.
+
+## Suggested X / Twitter post
+
+```text
+Why does on-policy distillation sometimes fail even with a stronger teacher?
+
+This repo breaks OPD down into mechanisms instead of folklore:
+- when student/teacher thinking patterns align
+- why higher teacher scores are not enough
+- how to recover failing runs with off-policy cold start + prompt selection
+
+Paper + code:
+https://github.com/thunlp/OPD
+```
+
+## Project highlights
+
+- **Mechanistic view of OPD**: connects success and failure to distributional compatibility between student and teacher.
+- **Practical recovery recipe**: includes off-policy cold start and teacher-aligned prompt selection.
+- **Token-level analysis**: studies where reward signal becomes useful during training.
+- **Ready-to-run training scripts**: includes reproducible entry points for OPD, RL, and SFT experiments.
+
+## Who this is for
+
+- Researchers studying post-training and distillation dynamics.
+- Engineers debugging unstable OPD pipelines.
+- Teams looking for a more evidence-based alternative to trial-and-error distillation.
+
+## Quick links
+
+- **Paper**: https://arxiv.org/abs/2604.13016
+- **Project repo**: https://github.com/thunlp/OPD
+- **Model collection**: https://huggingface.co/collections/lllyx/rethinking-opd
+
 ## 🎉News
 
 - **[2026-04-15]** We investigate the dynamics and mechanisms of on-policy distillation (OPD) of LLMs, and propose practical strategies to recover failing OPD. Check it out: [Paper](https://arxiv.org/pdf/2604.13016).
