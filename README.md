@@ -199,10 +199,10 @@ If you find this work helpful, please cite us:
 
 ## ⭐Star History
 
-<a href="https://www.star-history.com/#thunlp/OPD&Date">
+<a href="https://star-history.dera.page/#thunlp/OPD&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=thunlp/OPD&type=date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=thunlp/OPD&type=date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=thunlp/OPD&type=date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=thunlp/OPD&type=date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=thunlp/OPD&type=date" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=thunlp/OPD&type=date" />
   </picture>
 </a>
